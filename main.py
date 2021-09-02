@@ -1,23 +1,27 @@
 # EZ turtle commands by Andrew G #
 import turtle
-painter = turtle.Turtle()
+ttl = turtle.Turtle()
 wn = turtle.Screen()
-wn.mainloop()
-painter.right(90)
+
+ttl.right(90)
 def down(x):
-    painter.forward(x)
+    ttl.forward(x)
 def up(x):
-    painter.backward(x)
+    ttl.backward(x)
 def right(x):
-    painter.left(90)
+    ttl.left(90)
     down(x)
-    painter.right(90)
+    ttl.right(90)
 def left(x):
-    painter.right(90)
+    ttl.right(90)
     down(x)
-    painter.left(90)
+    ttl.left(90)
 def speed(x):
-    painter.speed(x)
+    ttl.speed(x)
 def size(x):
-    painter.pensize(x)
+    ttl.pensize(x)
 # End of EZ turtle commands by Andrew G #
+
+
+# END OF PROGRAM #
+wn.mainloop()
